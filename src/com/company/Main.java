@@ -33,5 +33,21 @@ public class Main {
         ArrayList<intClass> intClassArrayList = new ArrayList<intClass>();
         intClassArrayList.add(new intClass(55));
 
+        Integer integer = new Integer(55);
+        Double doubleValue = new Double(222.5);
+
+        ArrayList<Integer> intArrayList = new ArrayList<Integer>();
+
+        for (int i = 0; i < 10; i++) {
+            intArrayList.add(Integer.valueOf(i)); // autoboxinng
+        }
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i + " -----> " + intArrayList.get(i).intValue()); // unboxing
+        }
+
+        Integer myIntValue= 56; //Integer.valueOf(55)
+        int myInt = myIntValue.intValue();
+
     }
 }
